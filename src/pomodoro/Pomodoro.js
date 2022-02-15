@@ -43,7 +43,6 @@ function Pomodoro() {
   );
   // The current session - null where there is no session running
   const [session, setSession] = useState(initialState.session);
-  // ToDo: Allow the user to adjust the focus and break duration.
   const [focusDuration, setFocusDuration] = useState(initialState.focusTime);
   const [breakDuration, setBreakDuration] = useState(initialState.breakTime);
 
@@ -116,14 +115,10 @@ function Pomodoro() {
         />
       </div>
       <div>
-        {/* TODO: This area should show only when there is an active focus or break - i.e. the session is running or is paused */}
         <div className="row mb-2">
           <div className="col">
-            {/* TODO: Update message below to include current session (Focusing or On Break) total duration */}
             <DisplayFocusTime session={session} focusDuration={focusDuration} />
             <DisplayBreakTime session={session} breakDuration={breakDuration} />
-            {/* TODO: Update message below correctly
-            format the time remaining in the current session */}
           </div>
         </div>
         <div className="row mb-2">

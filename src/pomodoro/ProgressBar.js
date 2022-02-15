@@ -23,7 +23,7 @@ export default function ProgressBar({ session, focusDuration, breakDuration }) {
               (session?.label === "Focusing"
                 ? focusDuration * 60
                 : breakDuration * 60)
-          } // TODO: Increase aria-valuenow as elapsed time increases
+          }
           style={{
             width: `${
               100 -
@@ -32,7 +32,7 @@ export default function ProgressBar({ session, focusDuration, breakDuration }) {
                   ? focusDuration * 60
                   : breakDuration * 60)
             }%`,
-          }} // TODO: Increase width % as elapsed time increases
+          }}
         />
       </div>
     </div>

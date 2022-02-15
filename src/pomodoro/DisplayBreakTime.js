@@ -7,7 +7,6 @@ export default function DisplayBreakTime({ session, breakDuration}) {
     session?.label === "On Break" && (
       <>
         <h2 data-testid="session-title">
-          {/* update message to display focus/on break time */}
           On Break for {`${minutesToDuration(breakDuration)}`} minutes
         </h2>
         <p className="lead" data-testid="session-sub-title">
