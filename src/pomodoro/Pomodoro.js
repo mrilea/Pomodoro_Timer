@@ -48,8 +48,6 @@ function Pomodoro() {
 
   /**
    * Custom hook that invokes the callback function every second
-   *
-   * NOTE: You won't need to make changes to the callback function
    */
   useInterval(
     () => {
